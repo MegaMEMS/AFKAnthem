@@ -71,6 +71,10 @@
       display: flex;
       flex-direction: column;
       gap: 12px;
+      width: fit-content;   /* shrink to the widest link */
+      min-width: 260px;     /* floor so short lists don't get too narrow */
+      max-width: 100%;
+      margin: 0 auto;       /* center the whole block */
     }
     a.link {
       display: flex;
